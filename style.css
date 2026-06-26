@@ -1,7 +1,7 @@
 Basic CSS
 body {
-    background: #1e1e1e;
-    color: white;
+    background: #111111;
+    color: rgb(8, 8, 8);
     font-family: Arial, sans-serif;
     margin: 0;
 }
