@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seguimiento de MVP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+background-color: #888888; 
+}
+</style>
+<body>
+<a href="../Spanish/es-index.html">← Volver al inicio</a>
+
+<h1>Seguimiento de MVP</h1>
+
+<p>Alliance Manager permite a los líderes registrar los MVP de los eventos estándar, el Ajedrez de Alianza y la Batalla de las Ruinas.<br>Actualmente, estas son las tres categorías disponibles para el seguimiento, aunque su uso no es obligatorio.<br>Los líderes pueden añadir registros de sus miembros, y el bot llevará un control de los MVP de cada miembro en cada categoría.<br>Esto permite a los líderes ver fácilmente quién ha sido votado como MVP en su alianza recientemente, facilitando la elección para el próximo evento.<br>También existe una función de bloqueo para aquellos miembros que deseen excluirse de las votaciones de MVP o que prefieran no participar por motivos personales. Se puede aplicar un bloqueo a cualquier miembro para que su nombre no aparezca en la lista de selección al registrar datos.</p>
+<div class="a"></div>
+<h2>Instrucciones</h2>
+<h4 id ="/editmvp">/editmvp</h4>
+<p>Para registrar un nuevo MVP, utiliza el comando "/editmvp".</p>
+<img src="mvp.png" alt="Introduce el comando">
+<div class="a"></div>
+<p>Tras introducir el comando, se pregunta primero por el tipo de evento; a continuación, se selecciona al miembro y, finalmente, se introduce la fecha de la votación.</p>
+<img src="mvp1.png" alt="Selecciona el tipo de evento">
+<div class="a"></div>
+<img src="mvp2.png" alt="Introduce el registro">
+<div class="a"></div>
+<p>Una vez introducida la información y enviado el mensaje, aparecerá un mensaje de confirmación.</p>
+<img src="mvp3.png" alt="Mensaje de confirmación">
+<div class="a"></div>
+<p>El resultado final se muestra con un formato adecuado para publicarlo en un canal destinado a anuncios de MVP.</p>
+<img src="mvp4.png" alt="Resultado final">
+<div class="a"></div>
+<h4 id ="/blockmvp">/blockmvp</h4>
+<p>Utiliza el comando "/blockmvp" para impedir que un miembro pueda ser seleccionado como MVP. Deberás introducir la información del jugador y también podrás añadir una nota. <br>Ten en cuenta que esto no bloquea al miembro en Discord.</p> Esto es solo para evitar posibles errores al elegir un MVP.</p>
+<img src="mvpblock.png" alt="Introduce el comando e ingresa la información necesaria">
+<div class="a"></div>
+<p>Tras introducir la información y enviar el mensaje, aparecerá un mensaje de confirmación.</p>
+<img src="mvpblock1.png" alt="Mensaje de confirmación">
+<div class="a"></div>
+<p>Se muestra la confirmación final.</p>
+<img src="mvpblock2.png" alt="Confirmación final">
+<div class="a"></div>
+<h4 id ="/blockedlist">/blockedlist</h4>
+<p>Para ver la lista de miembros bloqueados, utiliza el comando "/blockedlist".</p>
+<img src="mvpblock3.png" alt="Introduce el comando">
+<div class="a"></div>
+<img src="mvpblock4.png" alt="Lista de bloqueados">
+<div class="a"></div>
+<p>Una demostración de cómo aparece un jugador "bloqueado" al usar /mvplist.</p>
+<img src="mvpblock5.png" alt="Jugador bloqueado en la lista">
+<div class="a"></div>
+<h4 id ="/mvplist">/mvplist</h4>
+<p>Para ver la lista de registros de MVP, utiliza el comando "/mvplist".</p>
+<img src="mvplist.png" alt="Introduce el comando">
+<div class="a"></div>
+<p>Muestra la lista de registros de MVP.</p>
+<img src="mvplist1.png" alt="Lista de MVP">
+<div class="a"></div>
+<h4 id ="/resetmvp">/resetmvp</h4>
+<p>Para borrar los registros de MVP de todos los miembros de una categoría específica, utiliza el comando "/resetmvp". Esto eliminará todos los registros de esa categoría y la acción es irreversible; por lo tanto, utilícelo con precaución y asegúrese de usar archivos de respaldo si es necesario.</p>
+<img src="resetmvp.png" alt="Introducir el comando">
+<div class="a"></div>
+<p>Tras introducir el comando, seleccione la categoría que desea restablecer.</p>
+<img src="resetmvp1.png" alt="Seleccionar la categoría">
+<div class="a"></div>
+<p>Una vez seleccionada la categoría, aparecerá un mensaje de confirmación.</p>
+<img src="resetmvp2.png" alt="Mensaje de confirmación">
+<div class="a"></div>
+<p>Tras confirmar, se mostrará el mensaje final que confirma el restablecimiento de dicha categoría.</p>
+<img src="resetmvp3.png" alt="Confirmación final">
+<div class="a"></div>
+<h4 id ="/unblockmvp">/unblockmvp</h4>
+<p>Utilice el comando "/unblockmvp" para desbloquear a un miembro de las selecciones de MVP. Deberá introducir la información del jugador.</p>
+<img src="unblockmvp.png" alt="Introducir el comando">
+<div class="a"></div>
+<img src="unblockmvp1.png" alt="Introducir la información">
+<p>Tras introducir la información y enviar el mensaje, aparecerá un mensaje de confirmación.</p>
+<img src="unblockmvp2.png" alt="Mensaje de confirmación">
+<div class="a"></div>
+<p>Se muestra la confirmación final.</p>
+<img src="unblockmvp3.png" alt="Confirmación final">
+<div class="a"></div>
+<p>Notas adicionales de las pruebas:<br>Si existen registros de un jugador y posteriormente se le bloquea, dichos registros permanecerán en segundo plano pero no aparecerán en la lista de MVP. No obstante, estos registros desaparecerán si se utiliza un comando de restablecimiento.<br>Si no se realiza un restablecimiento y se desbloquea al jugador, tenga en cuenta que esos registros antiguos volverán a aparecer la próxima vez que se consulte la lista de MVP.</p>
+<img src="unblockmvp4.png" alt="Pruebas de bloqueo y desbloqueo">
+<div class="a"></div>
+<a href="../Spanish/es-index.html">← Volver al inicio</a>
+</body>
+</html>

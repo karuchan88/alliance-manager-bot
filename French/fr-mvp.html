@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suivi des MVP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+background-color: #888888; 
+}
+</style>
+<body>
+<a href="fr-index.html">← Retour à l'accueil</a>
+
+<h1>Suivi des MVP</h1>
+
+<p>Alliance Manager permet aux chefs d'alliance de suivre les titres de MVP obtenus lors des événements standards, des Échecs d'alliance et de la Bataille des ruines.<br>Il s'agit actuellement des trois catégories disponibles pour le suivi ; leur utilisation est facultative.<br>Les chefs peuvent enregistrer les titres obtenus par leurs membres, et le bot conserve un historique des MVP pour chaque membre dans chaque catégorie.<br>Cela permet aux chefs de voir facilement quel membre a été élu MVP le plus récemment au sein de l'alliance, en vue du prochain vote.<br>Une fonctionnalité permet également aux membres de se retirer du système de vote MVP, que ce soit par choix personnel ou pour toute autre raison. Il est possible d'appliquer un blocage à n'importe quel membre ; son nom n'apparaîtra alors plus dans la liste de sélection lors de la saisie des enregistrements.</p>
+<div class="a"></div>
+<h2>Instructions</h2>
+<h4 id ="/editmvp">/editmvp</h4>
+<p>Pour saisir un nouvel enregistrement MVP, utilisez la commande « /editmvp ».</p>
+<img src="mvp.png" alt="Saisir la commande">
+<div class="a"></div>
+<p>Après avoir saisi la commande, la première étape consiste à choisir le type d'événement, puis à sélectionner le membre et enfin à indiquer la date du vote.</p>
+<img src="mvp1.png" alt="Sélectionner le type d'événement">
+<div class="a"></div>
+<img src="mvp2.png" alt="Saisir l'enregistrement">
+<div class="a"></div>
+<p>Une fois les informations saisies et le message envoyé, un message de confirmation s'affiche.</p>
+<img src="mvp3.png" alt="Message de confirmation">
+<div class="a"></div>
+<p>Le résultat final est alors affiché dans un format adapté à une publication dans un canal dédié aux annonces MVP.</p>
+<img src="mvp4.png" alt="Résultat final">
+<div class="a"></div>
+<h4 id ="/blockmvp">/blockmvp</h4>
+<p>Utilisez la commande « /blockmvp » pour empêcher la sélection d'un membre en tant que MVP. Vous devrez saisir les informations du joueur ; il est également possible d'ajouter une note. <br>Remarque : cette action ne bloque pas le membre sur Discord. Ceci permet simplement d'éviter toute erreur lors de la sélection d'un MVP.</p>
+<img src="mvpblock.png" alt="Saisissez la commande et les informations requises">
+<div class="a"></div>
+<p>Une fois les informations saisies et le message envoyé, un message de confirmation s'affiche.</p>
+<img src="mvpblock1.png" alt="Message de confirmation">
+<div class="a"></div>
+<p>La confirmation finale s'affiche.</p>
+<img src="mvpblock2.png" alt="Confirmation finale">
+<div class="a"></div>
+<h4 id ="/blockedlist">/blockedlist</h4>
+<p>Pour consulter la liste des membres bloqués, utilisez la commande « /blockedlist ».</p>
+<img src="mvpblock3.png" alt="Saisissez la commande">
+<div class="a"></div>
+<img src="mvpblock4.png" alt="Liste des membres bloqués">
+<div class="a"></div>
+<p>Exemple d'affichage d'un joueur « bloqué » via la commande /mvplist.</p>
+<img src="mvpblock5.png" alt="Joueur bloqué dans la liste">
+<div class="a"></div>
+<h4 id ="/mvplist">/mvplist</h4>
+<p>Pour consulter la liste des enregistrements MVP, utilisez la commande « /mvplist ».</p>
+<img src="mvplist.png" alt="Saisissez la commande">
+<div class="a"></div>
+<p>Affiche la liste des enregistrements MVP.</p>
+<img src="mvplist1.png" alt="Liste des MVP">
+<div class="a"></div>
+<h4 id ="/resetmvp">/resetmvp</h4>
+<p>Pour effacer les enregistrements MVP de tous les membres d'une catégorie spécifique, utilisez la commande « /resetmvp ».</p> Cette action supprimera toutes les données de cette catégorie de manière irréversible ; veuillez donc l'utiliser avec précaution et vous assurer de disposer de sauvegardes si nécessaire.</p>
+<img src="resetmvp.png" alt="Saisir la commande">
+<div class="a"></div>
+<p>Après avoir saisi la commande, sélectionnez la catégorie à réinitialiser.</p>
+<img src="resetmvp1.png" alt="Sélectionner la catégorie">
+<div class="a"></div>
+<p>Une fois la catégorie sélectionnée, un message de confirmation s'affichera.</p>
+<img src="resetmvp2.png" alt="Message de confirmation">
+<div class="a"></div>
+<p>Après confirmation, le message final apparaîtra pour confirmer la réinitialisation de la catégorie.</p>
+<img src="resetmvp3.png" alt="Confirmation finale">
+<div class="a"></div>
+<h4 id ="/unblockmvp">/unblockmvp</h4>
+<p>Utilisez la commande « /unblockmvp » pour débloquer un membre concernant les sélections MVP. Vous devrez saisir les informations du joueur.</p>
+<img src="unblockmvp.png" alt="Saisir la commande">
+<div class="a"></div>
+<img src="unblockmvp1.png" alt="Saisir les informations">
+<p>Après avoir saisi les informations et envoyé le message, un message de confirmation s'affichera.</p>
+<img src="unblockmvp2.png" alt="Message de confirmation">
+<div class="a"></div>
+<p>La confirmation finale s'affiche.</p>
+<img src="unblockmvp3.png" alt="Confirmation finale">
+<div class="a"></div>
+<p>Remarques supplémentaires issues des tests :<br>Si des données concernant un joueur ont été enregistrées avant que celui-ci ne soit bloqué, ces données resteront en mémoire mais n'apparaîtront pas dans la liste MVP. Elles disparaîtront toutefois si une commande de réinitialisation est utilisée.<br>Si aucune réinitialisation n'est effectuée et que le joueur est débloqué, sachez que ces anciennes données réapparaîtront lors de la prochaine consultation de la liste MVP.</p>
+<img src="unblockmvp4.png" alt="Test de blocage et de déblocage">
+<div class="a"></div>
+<a href="fr-index.html">← Retour à l'accueil</a>
+</body>
+</html>

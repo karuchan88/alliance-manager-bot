@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biblioteca de comandos del bot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+background-color: #888888; 
+}
+</style>
+<body>
+<a href="../Spanish/es-index.html">← Volver al inicio</a>
+
+<h1>Biblioteca de comandos del bot</h1>
+
+<p>Aquí tienes los comandos disponibles para el bot Alliance Manager:</p>
+<ul>
+<li></strong>Comandos de configuración inicial:</strong></li>
+<li>/ihelp - Muestra el menú de ayuda con descripciones breves e instrucciones para configurar el bot.</li>
+<li><a href="es-nickname.html">/setup</a> - Inicia el proceso de configuración del bot.</li>
+<li>/setupstatus - Configura o repara el mensaje incrustado (embed) de estado del bot en el canal especificado. Es el mensaje estático que indica si el bot está activo actualmente.</li>
+<li>/synccommands - Comando exclusivo para el propietario, utilizado para sincronizar los comandos del bot. </li>
+</ul>
+<ul>
+<li></strong>Comandos de gestión de nombres:</strong></li>
+<li>/listnames - Enumera todos los apodos registrados en el servidor.</li>
+<li>/addmember - Añade un miembro al sistema de seguimiento de apodos. Requiere el UID del miembro y su apodo actual en el juego.</li>
+<li>/editmember - Edita la información de un miembro en el sistema de seguimiento de apodos. Requiere el UID del miembro y la información actualizada.</li>
+<li>/deletemember - Elimina a un miembro del sistema de seguimiento de apodos. Requiere el UID del miembro.</li>
+<li>/bulkadd - Añade varios miembros a la vez copiando y pegando datos desde Google Sheets o Excel.</li>
+<li>/exportnames - Exporta todos los UIDs, nombres principales, nombres alternativos y campos MVP registrados a un archivo CSV.</li>
+</ul>
+<ul>
+<li></strong>Comandos de seguimiento de MVP:</strong></li>
+<li><a href="es-mvp.html#mvplist">/mvplist</a> - Enumera todos los registros de MVP de la alianza.</li>
+<li><a href="es-mvp.html#editmvp">/editmvp</a> - Edita un registro de MVP existente de un miembro. Requiere el UID del miembro, la categoría del evento y la información actualizada.</li>
+<li><a href="es-mvp.html#resetmvp">/resetmvp</a> - Borra el campo de categoría MVP seleccionado para todos los miembros.</li>
+<li><a href="es-mvp.html#blockmvp">/blockmvp</a> - Impide que un miembro sea seleccionado como MVP.</li>
+<li><a href="es-mvp.html#unblockmvp">/unblockmvp</a> - Permite nuevamente que un miembro sea seleccionado como MVP.</li>
+<li><a href="es-mvp.html#blockedlist">/blockedlist</a> - Muestra una lista de todos los miembros actualmente bloqueados para las selecciones de MVP.</li>
+</ul>
+<ul>
+<li></strong>Comandos de encuestas:</strong></li>
+<li><a href="es-polls.html#poll">/poll</a> - Crea una nueva encuesta con la pregunta especificada.</li>
+</ul>
+<p><strong>Cómo funciona la votación:</strong></p>
+<ul>
+<li>Los miembros votan utilizando los botones de la encuesta.</li>
+<li>Los votos no aparecen de inmediato.</li>
+<li>Existe un retraso de 60 segundos antes de que se muestren o actualicen los votos.</li>
+<li>Esto ayuda a evitar que las personas simplemente sigan los votos iniciales.</li>
+</ul>
+
+<h4>Votos por delegación (Proxy):</h4>
+<p>Los gerentes o miembros con el rol autorizado para delegar votos pueden votar en nombre de otros cuando sea necesario.</p>
+
+<h4>Hora de cierre:</h4>
+<p>Al crear una encuesta, puedes establecer cuándo se cerrará.</p>
+<p>Una vez cerrada, los botones de votación ya no aceptarán nuevos votos.</p>
+
+<a href="../Spanish/es-index.html">← Volver al inicio</a>
+
+</body>
+</html>

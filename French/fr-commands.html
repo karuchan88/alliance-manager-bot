@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bibliothèque de commandes du bot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+background-color: #888888; 
+}
+</style>
+<body>
+<a href="fr-index.html">← Retour à l'accueil</a>
+<h1>Bibliothèque de commandes du bot</h1>
+
+<p>Voici les commandes disponibles pour le bot Alliance Manager :</p>
+<ul>
+<li></strong>Commandes de configuration initiale :</strong></li>
+<li>/ihelp - Affiche le menu d'aide contenant de brèves descriptions et la procédure de configuration du bot.</li>
+<li><a href="fr-nickname.html#setup">/setup</a> - Lance le processus de configuration du bot.</li>
+<li>/setupstatus - Configure ou répare l'embed d'état du bot dans le salon spécifié. Il s'agit du message statique indiquant si le bot est actuellement actif.</li>
+<li>/synccommands - Commande réservée au propriétaire pour synchroniser les commandes du bot. </li>
+</ul>
+<ul>
+<li></strong>Commandes de gestion des noms :</strong></li>
+<li>/listnames - Liste tous les surnoms suivis pour le serveur.</li>
+<li>/addmember - Ajoute un membre au système de suivi des surnoms. Nécessite l'UID du membre et son surnom actuel en jeu.</li>
+<li>/editmember - Modifie les informations d'un membre dans le système de suivi des surnoms. Nécessite l'UID du membre et les informations mises à jour.</li>
+<li>/deletemember - Supprime un membre du système de suivi des surnoms. Nécessite l'UID du membre.</li>
+<li>/bulkadd - Ajoute plusieurs membres à la fois via un copier-coller depuis Google Sheets ou Excel.</li>
+<li>/exportnames - Exporte tous les UID, noms principaux, noms secondaires et champs MVP suivis vers un fichier CSV.</li>
+</ul>
+<ul>
+<li></strong>Commandes de suivi MVP :</strong></li>
+<li><a href="fr-mvp.html#mvplist">/mvplist</a> - Liste tous les enregistrements MVP suivis pour l'alliance.</li>
+<li><a href="fr-mvp.html#editmvp">/editmvp</a> - Modifie un enregistrement MVP existant pour un membre. Nécessite l'UID du membre, la catégorie de l'événement et les informations mises à jour.</li>
+<li><a href="fr-mvp.html#resetmvp">/resetmvp</a> - Réinitialise le champ de la catégorie MVP sélectionnée pour tous les membres.</li>
+<li><a href="fr-mvp.html#blockmvp">/blockmvp</a> - Empêche un membre d'être sélectionné pour le titre de MVP.</li>
+<li><a href="fr-mvp.html#unblockmvp">/unblockmvp</a> - Autorise à nouveau un membre à participer aux sélections MVP.</li>
+<li><a href="fr-mvp.html#blockedlist">/blockedlist</a> - Affiche la liste des membres actuellement exclus des sélections MVP.</li>
+</ul>
+<ul>
+<li></strong>Commandes de sondage :</strong></li>
+<li><a href="fr-polls.html#poll">/poll</a> - Crée un nouveau sondage avec la question spécifiée.</li>
+</ul>
+<p><strong>Fonctionnement du vote :</strong></p>
+<ul>
+<li>Les membres votent en utilisant les boutons du sondage.</li>
+<li>Les votes ne s'affichent pas immédiatement.</li>
+<li>Un délai de 60 secondes s'écoule avant que les votes ne soient affichés ou mis à jour.</li>
+<li>Cela permet d'éviter que les participants ne se contentent de suivre les premiers votes.</li>
+</ul>
+
+<h4>Votes par procuration :</h4>
+<p>Les managers ou les membres disposant du rôle autorisé pour les procurations peuvent voter au nom d'autres personnes si nécessaire.</p>
+
+<h4>Heure de clôture :</h4>
+<p>Lors de la création d'un sondage, vous pouvez définir l'heure de sa clôture.</p>
+<p>Une fois le sondage clôturé, les boutons de vote ne doivent plus accepter de nouveaux votes.</p>
+
+<a href="fr-index.html">← Retour à l'accueil</a>
+
+</body>
+</html>
